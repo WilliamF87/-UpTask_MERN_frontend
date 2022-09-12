@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { AuthProvider } from "./context/AuthProvider"
 import { ProyectosProvider } from "./context/ProyectosProvider"
 import AuthLayout from "./layouts/AuthLayout"
@@ -21,6 +21,12 @@ function App() {
       <AuthProvider>
         <ProyectosProvider>
           <Routes>
+            <Route
+              element={
+                <Navigate to="/proyectos" replace={true} />
+              }
+            />
+
             <Route path="/" element={<AuthLayout />}>
               <Route index element={<Login />} />
               <Route path="registrar" element={<Registrar />} />
