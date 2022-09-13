@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
 import { AuthProvider } from "./context/AuthProvider"
 import { ProyectosProvider } from "./context/ProyectosProvider"
 import AuthLayout from "./layouts/AuthLayout"
@@ -17,7 +17,7 @@ import Registrar from "./paginas/Registrar"
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <ProyectosProvider>
           <Routes>
@@ -40,7 +40,7 @@ function App() {
           </Routes>
         </ProyectosProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
