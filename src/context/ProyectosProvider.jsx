@@ -48,9 +48,8 @@ const ProyectosProvider = ({children}) => {
             setCargando(false);
 
         };
-        return () => {
-            obtenerProyectos();
-        };
+
+        obtenerProyectos();
     }, [auth]);
 
     useEffect(() => {

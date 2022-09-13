@@ -11,9 +11,10 @@ const EditarProyecto = () => {
     const { obtenerProyecto, proyecto, cargando, eliminarProyecto } = useProyectos();
 
     useEffect(() => {
-        return () => {
-            obtenerProyecto(params.id);
-        };
+        // return () => {
+        //     obtenerProyecto(params.id);
+        // };
+        obtenerProyecto(params.id);
     }, []);
 
     const hadleClick = () => {

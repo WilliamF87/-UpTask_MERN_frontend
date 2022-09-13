@@ -11,9 +11,10 @@ const NuevoColaborador = () => {
     const { obtenerProyecto, proyecto, cargando, colaborador, agregarColaborador, alerta } = useProyectos();
 
     useEffect(() => {
-        return() => {
-            obtenerProyecto(id);
-        };
+        // return() => {
+        //     obtenerProyecto(id);
+        // };
+        obtenerProyecto(id);
     }, []);
 
     if(!proyecto._id) return <Alerta alerta={alerta} />;

@@ -29,9 +29,10 @@ const Proyecto = () => {
     const admin = useAdmin();
 
     useEffect(() => {
-        return () => {
-            obtenerProyecto(params.id);
-        };
+        // return () => {
+        //     obtenerProyecto(params.id);
+        // };
+        obtenerProyecto(params.id);
     }, []);
 
     useEffect(() => {

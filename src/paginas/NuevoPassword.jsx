@@ -27,9 +27,10 @@ const NuevoPassword = () => {
             }
 
         };
-        return () => {
-            comprobarToken();
-        };
+        // return () => {
+        //     comprobarToken();
+        // };
+        comprobarToken();
 
     }, []);
 
