@@ -28,7 +28,7 @@ const FormularioProyecto = () => {
             setCliente(proyecto.cliente);
         }
 
-    }, [params]);
+    }, [params, proyecto]);
 
     const handleSubmit = async e => {
         e.preventDefault();
