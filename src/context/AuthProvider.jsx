@@ -17,9 +17,9 @@ const AuthProvider = ({children}) => {
             const token = localStorage.getItem("token");
 
             if(!token) {
-                setTimeout(() => {
-                    setCargando(false);
-                }, 2000);
+                setCargando(false);
+                // setTimeout(() => {
+                // }, 2000);
 
                 return;
             }
