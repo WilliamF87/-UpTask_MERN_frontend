@@ -21,12 +21,6 @@ function App() {
       <AuthProvider>
         <ProyectosProvider>
           <Routes>
-            <Route
-              element={
-                <Navigate to="/proyectos" replace={true} />
-              }
-            />
-
             <Route path="/" element={<AuthLayout />}>
               <Route index element={<Login />} />
               <Route path="registrar" element={<Registrar />} />
