@@ -20,7 +20,6 @@ const FormularioProyecto = () => {
         // (proyecto.fechaEntrega?: optional chaining, se usa porque el useEffeact va estar listo antes que la consulta a la API y se produce un error al intentar setear
         // split("T")[0]: el formato de la fecha viene como (2022-09-19T00:00:00.000Z), se necesita sólo lo que está antes de la T
         if(params.id) {
-            console.log(proyecto)
             setId(proyecto._id);
             setNombre(proyecto.nombre);
             setDescripcion(proyecto.descripcion);
