@@ -1,3 +1,4 @@
+import { Spinner } from "react-bootstrap";
 import { Navigate, Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
@@ -7,7 +8,7 @@ const RutaProtegida = () => {
 
     const { auth, cargando } = useAuth();
 
-    // if(cargando) return "";
+    if(cargando) return <Spinner />;
 
     return (
         <>
